@@ -1,10 +1,7 @@
-
-import ContaineRouter from './pages/router/Router'
+import ContaineRouter from "./pages/router/Router";
 
 function App() {
-
-
-  return <ContaineRouter/>
+  return <ContaineRouter/>;
 }
 
-export default App
+export default App;

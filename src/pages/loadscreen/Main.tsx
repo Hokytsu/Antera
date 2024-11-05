@@ -1,17 +1,16 @@
-import  { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { LoadScreenStyled } from "./MainStyled";
 import anteraLogo from "../../assets/anteraPreta.png";
 
 function LoadScreen() {
   const [stop, setStop] = useState(false);
 
-
   useEffect(() => {
     const timer = setTimeout(() => {
-      setStop(true); 
+      setStop(true);
     }, 10000); //+++
 
-    return () => clearTimeout(timer); 
+    return () => clearTimeout(timer);
   }, []);
 
   return (

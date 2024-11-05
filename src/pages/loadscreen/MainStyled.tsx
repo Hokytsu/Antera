@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface LoadScreenStyledProps {
-    stop: boolean;
+  stop: boolean;
 }
 
 export const LoadScreenStyled = styled.section<LoadScreenStyledProps>`
@@ -16,9 +16,9 @@ export const LoadScreenStyled = styled.section<LoadScreenStyledProps>`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: background-color 1s ease; 
+  transition: background-color 1s ease;
 
-  background-color: ${(props) => (props.stop ? "transparent" : "#f3f3f3")}; 
+  background-color: ${(props) => (props.stop ? "transparent" : "#f3f3f3")};
 
   #logoLoader {
     width: 125px;
@@ -61,7 +61,7 @@ export const LoadScreenStyled = styled.section<LoadScreenStyledProps>`
       100% {
         width: 0px;
         opacity: 0;
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
       }
     }
   }
